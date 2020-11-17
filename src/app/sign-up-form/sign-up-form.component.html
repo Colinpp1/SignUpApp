@@ -1,0 +1,73 @@
+
+<div class="container ">
+  <button  class="block claim_button">
+    <span style="font-weight:Bold;">Try it free 7 days</span>
+    <span style="font-weight:lighter;"> then $20/mo. therafter</span>
+  </button>
+
+  <div class="example1">
+  <div [hidden]="submitted">
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+      <div class="form-group">
+        <input type="text" class="form-control" id="first_name" placeholder="First Name"
+               required
+               [(ngModel)]="model.first_name" name="first_name"
+               #name="ngModel">
+              
+        <div [hidden]="!model.first_name =='' "
+             class="alert-message">
+          First Name cannot be empty
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="last_name" placeholder="Last Name"
+               required
+               [(ngModel)]="model.last_name" name="last_name"
+               #name="ngModel"
+               style="font-weight: bold;" value="Bold text">
+               
+               <div [hidden]="!model.last_name =='' "
+               class="alert-message">
+            Last Name cannot be empty
+            
+          </div>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="email" placeholder="Email"
+               required
+               [(ngModel)]="model.email" name="email"
+               #name="ngModel">
+               <div [hidden]="!model.email =='' "
+               class="alert-message">
+            Looks like this it not a valid email
+          </div>
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" id="password" placeholder="Password"
+               required
+               [(ngModel)]="model.password" name="password"
+               #name="ngModel">
+               <div [hidden]="!model.password=='' "
+               class="alert-message">
+            Password cannot be empty
+          </div>
+      </div>
+
+      
+  
+
+      <button  class="block">CLAIM YOUR FREE TRAIL</button>
+      <label class="lbl"> By clicking this button you are agreeeing to our <a class="Link" href="#" > Terms And Services</a> </label> 
+     
+      
+      
+
+    </form>
+  </div>
+</div>
+</div>
+
+  

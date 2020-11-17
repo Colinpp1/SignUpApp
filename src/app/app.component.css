@@ -1,0 +1,36 @@
+   .story-one {
+        width: 50%;
+        min-width : 400px;
+        float: left;
+        display : inline-block;
+    }
+    .story-two {
+        width: 50%;
+        min-width : 400px;
+        float: left;
+        display : inline-block;
+    }
+
+    .Heading {
+        font-family: "Poppins";
+        font-weight: bolder;
+        color:white;
+        font-size: 62px;
+        margin-top:27%;
+        margin-left:22%;
+        margin-right:20%
+    }
+
+    .SmallText{
+        font-size: medium;
+        font-weight:lighter;
+        margin-top:5%;
+        font-family: "Poppins";
+        margin-left:22%;
+        margin-right:16%;
+        color:white;
+    }
+    .Content {
+        margin-top:130px;
+    
+    }
