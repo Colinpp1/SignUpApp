@@ -5,7 +5,7 @@
     box-shadow: 1px 10px rgba(0, 0, 0, 0.12);
     background-color: white; 
     max-width: 660px;  
-    margin:20px;
+    margin:10px;
   }
 
   .form-group {
@@ -25,8 +25,7 @@
     font-size:12pt;
 }
 
-
-  .alert-message{
+.alert-message{
       margin-top:5px;
       margin-bottom:15px;
       float:right;
@@ -37,17 +36,18 @@
       color: tomato;
   }
 
-  .wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
     min-height: 400vh;
     max-height: 300;
    }
-  .main {
+
+.main {
     flex: 1;
   }
 
-  .block {
+.block {
     font-family:"Poppins" ! important;
     font-style:normal;
     font-weight:normal;
@@ -64,7 +64,7 @@
     border-radius: 12px;
     color:white;
   }
-  .lbl {
+.lbl {
     font-size:small;
     color:lightgray;
     font-weight:lighter; 
@@ -76,23 +76,23 @@
     left:10%;
   }
 
-  .Link {
+.Link {
     color:red;
   }
 
-  .claim_button {
+.claim_button {
     
     height: 60px; 
-    padding: 10px; 
+    padding: 10px;  
     box-shadow: 1px 8px rgba(0, 0, 0, 0.12);
     background-color:#6055A5; 
     max-width: 660px; 
-    margin:20px;
-
+    margin:10px;
+    margin-bottom:25px;
 
   }
 
-  .input_img {
+.input_img {
     position:absolute;
     bottom:8px;
     left:10px;
@@ -104,4 +104,14 @@
     height:20px;
     margin:0;
     padding-left: 30px;
+}
+
+.error-img {
+    background: url(../../assets/img/icon-error.svg) no-repeat scroll 500px 20px;
+
+}
+
+.error-img-text{
+    background: url(../../assets/img/icon-error.svg) no-repeat scroll 500px 20px;
+    color:red;
 }

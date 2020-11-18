@@ -1,15 +1,15 @@
 
 <div class="container ">
   <button  class="block claim_button">
-    <span style="font-weight:Bold;">Try it free 7 days</span>
-    <span style="font-weight:lighter;"> then $20/mo. therafter</span>
+    <span style="font-weight:Bolder;">Try it free 7 days</span>
+    <span style="font-weight:lighter;"> then $20/mo. thereafter </span>
   </button>
 
   <div class="example1">
   <div [hidden]="submitted">
     <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
       <div class="form-group">
-        <input type="text" class="form-control" id="first_name" placeholder="First Name"
+        <input type="text" class="form-control" [ngClass]="{'error-img':model.first_name==''}" id="first_name" placeholder="First Name"
                required
                [(ngModel)]="model.first_name" name="first_name"
                #name="ngModel">
@@ -21,7 +21,7 @@
       </div>
 
       <div class="form-group">
-        <input type="text" class="form-control" id="last_name" placeholder="Last Name"
+        <input type="text" class="form-control" [ngClass]="{'error-img':model.last_name==''}" id="last_name" placeholder="Last Name"
                required
                [(ngModel)]="model.last_name" name="last_name"
                #name="ngModel"
@@ -35,18 +35,18 @@
       </div>
 
       <div class="form-group">
-        <input type="text" class="form-control" id="email" placeholder="Email"
+        <input type="text" class="form-control" [ngClass]="{'error-img-text':!validateEmail()}"id="email" placeholder="Email"
                required
                [(ngModel)]="model.email" name="email"
                #name="ngModel">
-               <div [hidden]="!model.email =='' "
+               <div [hidden]="validateEmail()"
                class="alert-message">
             Looks like this it not a valid email
           </div>
       </div>
 
       <div class="form-group">
-        <input type="password" class="form-control" id="password" placeholder="Password"
+        <input type="password" class="form-control" [ngClass]="{'error-img':model.password==''}"id="password" placeholder="Password"
                required
                [(ngModel)]="model.password" name="password"
                #name="ngModel">

@@ -15,19 +15,19 @@
         font-family: "Poppins";
         font-weight: bolder;
         color:white;
-        font-size: 62px;
-        margin-top:27%;
-        margin-left:22%;
-        margin-right:20%
+        font-size: 50px;
+        margin-top:10vw;
+        margin-left:11vw;
+        margin-right:11vw;
+        text-align: center;
     }
 
     .SmallText{
-        font-size: medium;
-        font-weight:lighter;
+        font-size: 17px;
         margin-top:5%;
+        margin-left:25%;
         font-family: "Poppins";
-        margin-left:22%;
-        margin-right:16%;
+        margin-right:5%;
         color:white;
     }
     .Content {

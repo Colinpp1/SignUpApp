@@ -9,16 +9,19 @@ import {SignUp} from '../models/sign-up.model';
 })
 export class SignUpFormComponent implements OnInit {
 
-
   model = new SignUp('Test','Test','Test','Test');
   submitted  =false;
-
+  regexp;
   onSubmit() {  }
 
   newSignUp() {
     this.model = new SignUp("","","","");
   }
 
+  validateEmail(){
+    this.regexp = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    return this.regexp.test(this.model.email);
+  }
   get diagnostic() { return JSON.stringify(this.model); }
 
   showFormControls(form:any){
@@ -30,5 +33,7 @@ export class SignUpFormComponent implements OnInit {
   ngOnInit() {
     this.model ;
   }
+
+
 
 }
