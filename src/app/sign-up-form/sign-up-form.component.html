@@ -1,7 +1,7 @@
 
 <div class="container ">
   <button  class="block claim_button">
-    <span style="font-weight:Bolder;">Try it free 7 days</span>
+    <span style="font-weight:700">Try it free 7 days</span>
     <span style="font-weight:lighter;"> then $20/mo. thereafter </span>
   </button>
 
@@ -9,25 +9,25 @@
   <div [hidden]="submitted">
     <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
       <div class="form-group">
-        <input type="text" class="form-control" [ngClass]="{'error-img':model.first_name==''}" id="first_name" placeholder="First Name"
+        <input type="text" class="form-control" [ngClass]="{'error-img':!validateName()}" id="first_name" placeholder="First Name"
                required
                [(ngModel)]="model.first_name" name="first_name"
                #name="ngModel">
               
-        <div [hidden]="!model.first_name =='' "
+        <div [hidden]="validateName()"
              class="alert-message">
           First Name cannot be empty
         </div>
       </div>
 
       <div class="form-group">
-        <input type="text" class="form-control" [ngClass]="{'error-img':model.last_name==''}" id="last_name" placeholder="Last Name"
+        <input type="text" class="form-control" [ngClass]="{'error-img':!validateSurname()}" id="last_name" placeholder="Last Name"
                required
                [(ngModel)]="model.last_name" name="last_name"
                #name="ngModel"
                style="font-weight: bold;" value="Bold text">
                
-               <div [hidden]="!model.last_name =='' "
+               <div [hidden]="validateSurname() "
                class="alert-message">
             Last Name cannot be empty
             
@@ -41,16 +41,16 @@
                #name="ngModel">
                <div [hidden]="validateEmail()"
                class="alert-message">
-            Looks like this it not a valid email
+            Looks like this it not a valid 
           </div>
       </div>
 
       <div class="form-group">
-        <input type="password" class="form-control" [ngClass]="{'error-img':model.password==''}"id="password" placeholder="Password"
+        <input type="password" class="form-control" [ngClass]="{'error-img':!validatePassword()}"id="password" placeholder="Password"
                required
                [(ngModel)]="model.password" name="password"
                #name="ngModel">
-               <div [hidden]="!model.password=='' "
+               <div [hidden]="validatePassword()"
                class="alert-message">
             Password cannot be empty
           </div>
@@ -59,7 +59,7 @@
       
   
 
-      <button  class="block">CLAIM YOUR FREE TRAIL</button>
+      <button  class="block" (click)="Validation()">CLAIM YOUR FREE TRAIL</button>
       <label class="lbl"> By clicking this button you are agreeeing to our <a class="Link" href="#" > Terms And Services</a> </label> 
      
       

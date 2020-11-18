@@ -12,7 +12,7 @@
       padding:7px;
   }
   .form-control:focus {
-    border-color: #6055A5;
+    border-color: hsl(249, 10%, 26%) ;
     
   /*  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 4px rgba(141, 12, 167, 0.6);*/
   }
@@ -33,7 +33,7 @@
       font-family:"Poppins";
       font-style: italic;
       font-size: small;
-      color: tomato;
+      color: hsl(0, 100%, 74%);
   }
 
 .wrapper {
@@ -49,13 +49,12 @@
 
 .block {
     font-family:"Poppins" ! important;
-    font-style:normal;
-    font-weight:normal;
+    font-weight:600;
     display: block;
     height: 65px; 
     width: 100%;
     border: none;
-    background-color: #4CAF50;
+    background-color: hsl(154, 59%, 51%);
     color:white;
     padding: 14px 28px;
     font-size: 14px;
@@ -66,7 +65,7 @@
   }
 .lbl {
     font-size:small;
-    color:lightgray;
+    color:hsl(246, 25%, 77%);
     font-weight:lighter; 
     font-family: 'Poppins';
     text-align:center;
@@ -77,13 +76,14 @@
   }
 
 .Link {
-    color:red;
+    color:hsl(0, 100%, 74%);
   }
 
 .claim_button {
     
     height: 60px; 
     padding: 10px;  
+    font-weight: 700;
     box-shadow: 1px 8px rgba(0, 0, 0, 0.12);
     background-color:#6055A5; 
     max-width: 660px; 
@@ -107,11 +107,13 @@
 }
 
 .error-img {
-    background: url(../../assets/img/icon-error.svg) no-repeat scroll 500px 20px;
+    background: url(../../assets/img/icon-error.svg) no-repeat scroll 510px 20px;
+    border:solid 2px hsl(0, 100%, 74%);
 
 }
 
 .error-img-text{
-    background: url(../../assets/img/icon-error.svg) no-repeat scroll 500px 20px;
-    color:red;
+    background: url(../../assets/img/icon-error.svg) no-repeat scroll 510px 20px;
+    color:hsl(0, 100%, 74%);
+    border:solid 2px hsl(0, 100%, 74%);
 }

@@ -2,6 +2,7 @@
         width: 50%;
         min-width : 400px;
         float: left;
+        align-content: center;
         display : inline-block;
     }
     .story-two {
@@ -12,22 +13,26 @@
     }
 
     .Heading {
+        font-size: xx-large;
         font-family: "Poppins";
-        font-weight: bolder;
+        font-weight: 700;
         color:white;
-        font-size: 50px;
-        margin-top:10vw;
-        margin-left:11vw;
-        margin-right:11vw;
+        font-size: 60px;
+        margin-top:25%;
+        margin-left:15%;
+        margin-right:8%;
         text-align: center;
     }
 
     .SmallText{
-        font-size: 17px;
-        margin-top:5%;
-        margin-left:25%;
+        font-size: 16px;
+        margin-left:17%;
+        font-weight: 400;
         font-family: "Poppins";
-        margin-right:5%;
+        margin-top:5%;
+        margin-left:23%;
+        margin-right:15%;
+        text-align:left;
         color:white;
     }
     .Content {
