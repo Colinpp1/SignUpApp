@@ -87,7 +87,7 @@
     box-shadow: 1px 8px rgba(0, 0, 0, 0.12);
     background-color:#6055A5; 
     max-width: 660px; 
-    margin:10px;
+    margin:4px;
     margin-bottom:25px;
 
   }
@@ -116,4 +116,33 @@
     background: url(../../assets/img/icon-error.svg) no-repeat scroll 510px 20px;
     color:hsl(0, 100%, 74%);
     border:solid 2px hsl(0, 100%, 74%);
+}
+
+@media (max-width:380px){
+    .form-group{
+       padding:1px;
+        
+    }.form-control{
+    height:30px;
+    padding:2px;
+    font-weight:bold ! important; 
+    font-family:"Poppins" ;
+    font-size:8pt;
+    }.example1{
+        border-radius: 3px;
+        max-width:660px;
+        margin:1px;
+        padding: 7px;
+        width: 100%;
+    }.block{
+        height: 60px; 
+        
+
+    }.lbl{
+        font-size: x-small;
+    }.alert-message{
+        font-weight:1px; 
+        font-size: xx-small;
+
+    }
 }
